@@ -1,0 +1,3 @@
+D:/Coding/Codes/GIthub_Repos/XOXO/build/CMakeFiles/XOXO.dir
+D:/Coding/Codes/GIthub_Repos/XOXO/build/CMakeFiles/ALL_BUILD.dir
+D:/Coding/Codes/GIthub_Repos/XOXO/build/CMakeFiles/ZERO_CHECK.dir
