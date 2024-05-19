@@ -54,6 +54,7 @@ int main() {
 
         // Check if the computer has won
         if(checkwin(cells, player,computer)){
+        drawboard(cells);
         std::cout<<"-----------------------------------"<<std::endl;
         std::cout<<"------------- You Lose ------------"<<std::endl;
         std::cout<<"-----------------------------------"<<std::endl;
