@@ -26,16 +26,20 @@ int main() {
 
         // Check if the player has won
         if(checkwin(cells, player,computer)){
-        std::cout<<"-----------------------------------"<<std::endl;
-        std::cout<<"------------- You Win -------------"<<std::endl;
-        std::cout<<"-----------------------------------"<<std::endl;
+            std::cout<<"-----------------------------------"<<std::endl;
+            std::cout<<"------------- You Win -------------"<<std::endl;
+            std::cout<<"-----------------------------------"<<std::endl;
+            std::this_thread::sleep_for(std::chrono::seconds(7));
             gameOver = true;
             break;
 
         }
         else if(checkDraw(cells)){
             drawboard(cells);
-            std::cout << "It's a draw!" << std::endl;
+            std::cout<<"-----------------------------------"<<std::endl;
+            std::cout<<"------------ Game Drawn -----------"<<std::endl;
+            std::cout<<"-----------------------------------"<<std::endl;
+            std::this_thread::sleep_for(std::chrono::seconds(7));
             gameOver = true;
             break;
 
@@ -54,18 +58,20 @@ int main() {
 
         // Check if the computer has won
         if(checkwin(cells, player,computer)){
-        drawboard(cells);
-        std::cout<<"-----------------------------------"<<std::endl;
-        std::cout<<"------------- You Lose ------------"<<std::endl;
-        std::cout<<"-----------------------------------"<<std::endl;
+            drawboard(cells);
+            std::cout<<"-----------------------------------"<<std::endl;
+            std::cout<<"------------- You Lose ------------"<<std::endl;
+            std::cout<<"-----------------------------------"<<std::endl;
+            std::this_thread::sleep_for(std::chrono::seconds(7));
             gameOver = true;
             break;
         } 
         else if(checkDraw(cells)){
             // drawboard(cells);
-        std::cout<<"-----------------------------------"<<std::endl;
-        std::cout<<"------------ Game Drawn -----------"<<std::endl;
-        std::cout<<"-----------------------------------"<<std::endl;
+            std::cout<<"-----------------------------------"<<std::endl;
+            std::cout<<"------------ Game Drawn -----------"<<std::endl;
+            std::cout<<"-----------------------------------"<<std::endl;
+            std::this_thread::sleep_for(std::chrono::seconds(7));
             gameOver = true;
             break;
 
